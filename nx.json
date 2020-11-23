@@ -29,6 +29,13 @@
     "state-management-e2e": {
       "tags": [],
       "implicitDependencies": ["state-management"]
+    },
+    "state-management-recoil": {
+      "tags": []
+    },
+    "state-management-recoil-e2e": {
+      "tags": [],
+      "implicitDependencies": ["state-management-recoil"]
     }
   }
 }

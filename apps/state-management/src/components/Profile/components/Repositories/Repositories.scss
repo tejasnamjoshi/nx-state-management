@@ -1,0 +1,25 @@
+.Repositories {
+  &__item {
+    border-top: 1px solid lightgrey;
+  }
+
+  &__language {
+    min-width: 100px;
+  }
+
+  &__languageIcon {
+    color: #dea584;
+
+    &--javascript {
+      color: #00add8;
+    }
+
+    &--ruby {
+      color: #f34b7d;
+    }
+
+    &--python {
+      color: #f1e05a;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.ProfileDetails {
+  &__avatar {
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.55rem;
+  }
+
+  &__login {
+    font-size: 1.25rem;
+    color: #666;
+  }
+
+  &__stats {
+    div {
+      color: #666;
+    }
+  }
+}
