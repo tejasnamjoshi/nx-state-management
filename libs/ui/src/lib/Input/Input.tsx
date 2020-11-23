@@ -6,7 +6,7 @@ export interface IInput {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = (props: IInput) => {
+export const Input = (props: IInput) => {
   const { placeholder } = props;
 
   return (
@@ -24,5 +24,3 @@ const Input = (props: IInput) => {
     </div>
   );
 };
-
-export default Input;

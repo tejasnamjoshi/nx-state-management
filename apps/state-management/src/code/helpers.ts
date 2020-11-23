@@ -1,10 +1,9 @@
-export const debounce = (func: any, wait: number = 300) => {
-  let timeout: NodeJS.Timeout;
+export const debounce = (func: any, wait = 300) => {
+  let timeout: NodeJS.Timer;
 
   return function executedFunction(...args: any) {
     const later = () => {
       clearTimeout(timeout);
-      console.log(func, args);
       func(...args);
     };
 

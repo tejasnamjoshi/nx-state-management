@@ -1,10 +1,10 @@
+import { Input } from '@react-apps/ui';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useResetRecoilState, useSetRecoilState } from 'recoil';
 import { userSearchTextAtom } from 'src/atoms/userStateAtoms';
 import { debounce } from 'src/code/helpers';
 import { IUserState } from 'src/interfaces';
 
-import Input from '../common/Input';
 import Loader from '../common/Loader';
 import UserList from './components/UserList';
 
@@ -30,7 +30,11 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <React.Suspense fallback={<Loader />}>
-        <Input onChange={handleSearch} inputText={searchText} placeholder="Username" />
+        <Input
+          onChange={handleSearch}
+          inputText={searchText}
+          placeholder="Username"
+        />
         <UserList />
       </React.Suspense>
     </div>

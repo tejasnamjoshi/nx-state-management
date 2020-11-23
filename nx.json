@@ -36,6 +36,9 @@
     "state-management-recoil-e2e": {
       "tags": [],
       "implicitDependencies": ["state-management-recoil"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }

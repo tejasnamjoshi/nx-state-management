@@ -15,7 +15,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@react-apps/ui": ["../../libs/ui/src/index.ts"]
+    }
   },
   "files": [],
   "include": [],
