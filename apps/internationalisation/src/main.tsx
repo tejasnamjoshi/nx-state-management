@@ -4,24 +4,12 @@ import ReactDOM from 'react-dom';
 import { initReactI18next } from 'react-i18next';
 
 import LanguageChange from './app/LanguageChange/LanguageChange';
-
-const resources = {
-  en: {
-    translation: {
-      'Welcome to React': 'Welcome to React and react-i18next',
-    },
-  },
-  fr: {
-    translation: {
-      'Welcome to React': 'Bienvenue à React et react-i18next',
-    },
-  },
-};
+import { en, es } from './locales';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    resources,
+    resources: { en, es },
     lng: 'en',
     fallbackLng: 'en',
 
