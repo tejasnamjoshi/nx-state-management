@@ -4,5 +4,6 @@ module.exports = {
     '<rootDir>/apps/state-management-recoil',
     '<rootDir>/libs/test-lib',
     '<rootDir>/libs/ui',
+    '<rootDir>/apps/internationalisation',
   ],
 };
